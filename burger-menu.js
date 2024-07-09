@@ -1,15 +1,14 @@
 $(document).ready(function () {
-    $('#sidebarCollapseBtn').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
+  $("#sidebarCollapseBtn").on("click", function () {
+    $("#sidebar").toggleClass("active");
+  });
 
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').removeClass('active');
-    });
+  $("#sidebarCollapse").on("click", function () {
+    $("#sidebar").removeClass("active");
+  });
 });
 
-
-/*
+/* !
 let currentRowGallery = 0;
 const rowsGallery = ['secondRowgallery', 'thirdRowgallery'];
 
@@ -70,95 +69,156 @@ document.getElementById('showlessCourses').addEventListener('click', function() 
     }
 });*/
 
+document.addEventListener("DOMContentLoaded", function () {
+  const loadMoreButton = document.getElementById("loadmoregallery");
+  const showLessButton = document.getElementById("showlessgallery");
+  const loadingDiv = document.getElementById("loading");
+  const galleries = document.querySelectorAll(".row.gallery");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const loadMoreButton = document.getElementById('loadmoregallery');
-    const showLessButton = document.getElementById('showlessgallery');
-    const loadingDiv = document.getElementById('loading');
-    const galleries = document.querySelectorAll('.row.gallery');
-  
-    let visibleGalleryCount = 1;
-  
-    function showLoading() {
-      loadingDiv.style.opacity = '1';
-      loadingDiv.style.visibility = 'visible';
-      loadingDiv.style.position = 'relative'
-    }
-  
-    function hideLoading() {
-      loadingDiv.style.opacity = '0';
-      loadingDiv.style.visibility = 'hidden';
-      loadingDiv.style.position = 'absolute';
-    }
-  
-    loadMoreButton.addEventListener('click', function() {
-      showLoading();
-      setTimeout(() => {
-        if (visibleGalleryCount < galleries.length) {
-            
-            galleries[visibleGalleryCount].classList.add('show');
-          visibleGalleryCount++;
-          showLessButton.style.display = 'inline-block';
-          
-        }
+  let visibleGalleryCount = 1;
 
-        if (visibleGalleryCount === galleries.length) {
-            loadMoreButton.style.display = 'none';
-          }
-        hideLoading();
-      }, 1000); // Simulate loading time
-    });
-  
-    showLessButton.addEventListener('click', function() {
-      if (visibleGalleryCount >= 1) {
-        visibleGalleryCount--;
-        
-        galleries[visibleGalleryCount].classList.remove('show');
-        loadMoreButton.style.display = 'inline-block';
-        
-      }
+  function showLoading() {
+    loadingDiv.style.opacity = "1";
+    loadingDiv.style.visibility = "visible";
+    loadingDiv.style.position = "relative";
+  }
 
+  function hideLoading() {
+    loadingDiv.style.opacity = "0";
+    loadingDiv.style.visibility = "hidden";
+    loadingDiv.style.position = "absolute";
+  }
+
+  loadMoreButton.addEventListener("click", function () {
+    showLoading();
+    setTimeout(() => {
       if (visibleGalleryCount < galleries.length) {
-        loadMoreButton.style.display = 'inline-block';
+        galleries[visibleGalleryCount].classList.add("show");
+        visibleGalleryCount++;
+        showLessButton.style.display = "inline-block";
       }
-      if (visibleGalleryCount === 1) {
-        
-        showLessButton.style.display = 'none';
-      }
-    });
 
-    galleries[0].classList.add('show');
+      if (visibleGalleryCount === galleries.length) {
+        loadMoreButton.style.display = "none";
+      }
+      hideLoading();
+    }, 1000); // Simulate loading time
   });
 
+  showLessButton.addEventListener("click", function () {
+    if (visibleGalleryCount >= 1) {
+      visibleGalleryCount--;
 
+      galleries[visibleGalleryCount].classList.remove("show");
+      loadMoreButton.style.display = "inline-block";
+    }
 
+    if (visibleGalleryCount < galleries.length) {
+      loadMoreButton.style.display = "inline-block";
+    }
+    if (visibleGalleryCount === 1) {
+      showLessButton.style.display = "none";
+    }
+  });
 
-  const buttons = document.querySelectorAll('.category-Btn');
-  const contents = document.querySelectorAll('.content');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const contentId = button.dataset.contentId;
-
-        // Deactivate all buttons
-        buttons.forEach(b => b.classList.remove('active'));
-
-        // Activate clicked button
-        button.classList.add('active');
-
-        // Hide all content
-        contents.forEach(container => {container.style.visibility = 'hidden'; container.style.opacity = '0'; container.style.position = 'absolute'});
-
-        // Show the corresponding content
-        const tragetcontent = document.getElementById(contentId);
-        setTimeout(() => {
-          tragetcontent.style.opacity = '1';
-          tragetcontent.style.visibility = 'visible';
-          tragetcontent.style.position ='relative';
-      }, 50);
-
-    });
+  galleries[0].classList.add("show");
 });
 
+const buttons = document.querySelectorAll(".category-Btn");
+const contents = document.querySelectorAll(".content");
 
-  
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const contentId = button.dataset.contentId;
+
+    // Deactivate all buttons
+    buttons.forEach((b) => b.classList.remove("active"));
+
+    // Activate clicked button
+    button.classList.add("active");
+
+    // Hide all content
+    contents.forEach((container) => {
+      container.style.visibility = "hidden";
+      container.style.opacity = "0";
+      container.style.position = "absolute";
+    });
+
+    // Show the corresponding content
+    const tragetcontent = document.getElementById(contentId);
+    setTimeout(() => {
+      tragetcontent.style.opacity = "1";
+      tragetcontent.style.visibility = "visible";
+      tragetcontent.style.position = "relative";
+    }, 50);
+  });
+});
+
+/* courses Pagination*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".navPag[data-page]");
+  var prevLink = document.getElementById("prev");
+  var nextLink = document.getElementById("next");
+  var currentPage = 1;
+
+  function showPage(page) {
+    // Hide all content sections
+    var sections = document.querySelectorAll(".content-section");
+    sections.forEach(function (section) {
+      section.classList.remove("active");
+    });
+
+    // Show the selected content section
+    document.getElementById("content-" + page).classList.add("active");
+
+    // Remove active class from all page items
+    var pageItems = document.querySelectorAll(".page-item");
+    pageItems.forEach(function (item) {
+      item.classList.remove("active");
+    });
+
+    // Add active class to the clicked page item
+    document
+      .querySelector('.navPag[data-page="' + page + '"]')
+      .parentElement.classList.add("active");
+
+    // Update current page
+    currentPage = page;
+  }
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      var page = parseInt(this.getAttribute("data-page"));
+      showPage(page);
+    });
+  });
+
+  prevLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (currentPage > 1) {
+      showPage(currentPage - 1);
+    }
+
+    if (currentPage < 1) {
+      showPage(1);
+    }
+  });
+
+  nextLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (currentPage <= 6) {
+      // last page number changes
+      showPage(currentPage + 1);
+    }
+
+    if (currentPage > 6) {
+      // last page number changes
+      showPage(21);
+    }
+  });
+
+  // Initialize by showing the first page
+  showPage(currentPage);
+});

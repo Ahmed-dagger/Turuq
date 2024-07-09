@@ -1,721 +1,707 @@
-body
-{
-    background-color: white;
+body {
+  background-color: white;
 }
-*
-{
-    font-family: "montserrat";
+* {
+  font-family: "montserrat";
 }
-.tph-icons
-{
-    color: #CC1C22
+.tph-icons {
+  color: #cc1c22;
 }
-.infos
-{
-    font-weight: 500;
-    size: 13px;
-
+.infos {
+  font-weight: 500;
+  size: 13px;
 }
-.icons
-{
-    color: #333333;
-    transition: 0.3s;
+.icons {
+  color: #333333;
+  transition: 0.3s;
 }
 
-.icons:hover
-{
-    color: #CC1C22;
+.icons:hover {
+  color: #cc1c22;
 }
 
-.cardentials
-{
-    font-style: none;
-    text-underline-offset: none;
-    transition: 0.3s;
-    color: #333333;
-    font-weight: 500;
-    size: 13px;
+.cardentials {
+  font-style: none;
+  text-underline-offset: none;
+  transition: 0.3s;
+  color: #333333;
+  font-weight: 500;
+  size: 13px;
 }
-.cardentials:hover
-{
-    color: #CC1C22;
-    text-decoration: none;
+.cardentials:hover {
+  color: #cc1c22;
+  text-decoration: none;
 }
 
 .top-header {
-    font-size: 14px;
-    color: #ffffff;
-    background-color: white;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: white;
 }
 
 .top-header .contact-info i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .top-header .user-actions a {
-    color: #333;
+  color: #333;
 }
 
 .top-header .user-actions a:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
 .main-header .logo img {
-    max-height: 40px;
+  max-height: 40px;
 }
 
-.Lego
-{
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    font-size: 32px;
-    color: #333;
-    transition: 0.25s;
-
+.Lego {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+  transition: 0.25s;
 }
 
-.Lego:hover
-{
-    color: #CC1C22;
+.Lego:hover {
+  color: #cc1c22;
 }
 
 .main-header .navbar-nav .nav-item .nav-link {
-    color: #333;
-    padding: 0 20px;
+  color: #333;
+  padding: 0 20px;
 }
-
 
 .main-header .navbar-nav .nav-item.active .nav-link,
-.main-header .navbar-nav .nav-item .nav-link:hover 
-{
-    color: #CC1C22;
-    border-bottom: solid 2px #CC1C22 ; 
+.main-header .navbar-nav .nav-item .nav-link:hover {
+  color: #cc1c22;
+  border-bottom: solid 2px #cc1c22;
 }
 
-.navbar-nav
-{
-    width: max-content;
+.navbar-nav {
+  width: max-content;
 }
 
-.navbar-nav .nav-item
-{
-    width: max-content;
+.navbar-nav .nav-item {
+  width: max-content;
 }
 
 .main-header .cart a {
-    color: #333;
-    position: relative;
+  color: #333;
+  position: relative;
 }
 
-
-.main-header .cart:hover
-{
-    color:#CC1C22;
+.main-header .cart:hover {
+  color: #cc1c22;
 }
 .main-header .cart a .badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #000000;
-    color: #fff;
-    transition: all 0.3s;
-    z-index: 1000;
-    padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #000000;
+  color: #fff;
+  transition: all 0.3s;
+  z-index: 1000;
+  padding-top: 60px;
 }
-.SideBarLogo
-{
-    max-width: 120px;
+.SideBarLogo {
+  max-width: 120px;
 }
 .sidebar.active {
-    left: 0;
+  left: 0;
 }
 
 .sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .sidebar-header .close {
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .sidebar ul.components {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .sidebar ul li {
-    padding: 10px;
-    padding-left: 20px;
-    list-style: none;
+  padding: 10px;
+  padding-left: 20px;
+  list-style: none;
 }
 
 .sidebar .components .MenuItem .linkItem {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
 }
 
-.sidebar .components .MenuItem .linkItem:hover ,
+.sidebar .components .MenuItem .linkItem:hover,
 .sidebar .components .MenuItem.active .linkItem,
-.sidebar .components .MenuItem .linkItem:focus  {
-    color: #CC1C22;
+.sidebar .components .MenuItem .linkItem:focus {
+  color: #cc1c22;
 }
-
-
 
 #sidebarCollapseBtn {
-   background-color: #00000000;
-   border: none;
-   outline: none;
-   transition: 0.3s;
+  background-color: #00000000;
+  border: none;
+  outline: none;
+  transition: 0.3s;
 }
-#sidebarCollapseBtn:hover
-{
-    color: #CC1C22;
+#sidebarCollapseBtn:hover {
+  color: #cc1c22;
 }
 
 .card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    border-bottom: none;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  border-bottom: none;
 }
 
 .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 250px;
-    object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .profile-section {
-    display: flex;
-    
+  display: flex;
 }
 
 .profile-section img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.ProfileBack
-{
-    max-height: 400px;
+.ProfileBack {
+  max-height: 400px;
 }
 
-.AcademyImg
-{
-    border: 3px solid #333;
-    width: 150px;
-    height: 150px;
-
+.AcademyImg {
+  border: 3px solid #333;
+  width: 150px;
+  height: 150px;
 }
 
-
-
-.ProfileInfo
-{
-    position: relative;
-    bottom: 50px;
+.ProfileInfo {
+  position: relative;
+  bottom: 50px;
 }
 
 .profile-section h5 {
-    margin: 0;
-    font-size: 1.2rem;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .profile-section p {
-    margin: 0;
-    color: gray;
-    font-size: 0.9rem;
+  margin: 0;
+  color: gray;
+  font-size: 0.9rem;
 }
 
-.AcademyButton
-{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 25%, rgba(213,1,1,1) 98%);
-    font-weight: 700;
-    color: white;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+.AcademyButton {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 25%,
+    rgba(213, 1, 1, 1) 98%
+  );
+  font-weight: 700;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.AcademyButton:hover
-{
-    background: rgb(2,0,36); 
-    background: linear-gradient(90deg,rgba(213,1,1,1)  25%,rgba(2,0,36,1)  98%);
+.AcademyButton:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(213, 1, 1, 1) 25%,
+    rgba(2, 0, 36, 1) 98%
+  );
 }
 .ConfgButton {
-    cursor: pointer;
-    position: relative;
-    padding: 10px 12px;
-    font-size: 16px;
-    color: rgb(193, 3, 3);
-    border: 2px solid rgb(193, 3, 3);;
-    border-radius: 34px;
-    background-color: transparent;
-    font-weight: 600;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-    overflow: hidden;
-  }
-  
-  .ConfgButton::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    min-width: 40px;
-    width: 50px;
-    height: 50px;
-    border-radius: inherit;
-    scale: 0;
-    z-index: -1;
-    background-color: rgb(193, 3, 3);;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .ConfgButton:hover::before {
-    scale: 3;
-  }
-  
-  .ConfgButton:hover {
-    color: #ffffff;
-    scale: 1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
-  }
-  
-  .ConfgButton:active {
-    scale: 1;
-  }
+  cursor: pointer;
+  position: relative;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: rgb(193, 3, 3);
+  border: 2px solid rgb(193, 3, 3);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+.ConfgButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  min-width: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(193, 3, 3);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ConfgButton:hover::before {
+  scale: 3;
+}
+
+.ConfgButton:hover {
+  color: #ffffff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.ConfgButton:active {
+  scale: 1;
+}
 
 .btn-link {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .btn-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.TabsTitle
-{
-    font-weight: 700;
-    color: #CC1C22;
+.TabsTitle {
+  font-weight: 700;
+  color: #cc1c22;
 }
-.CounterRow
-{
-    padding: 15px;
+.CounterRow {
+  padding: 15px;
 }
 
-.AcademyInfoImg
-{
-    background-image: url(img/Garduation.jpeg);
-    background-size: cover;
-    border-radius: 15px;
-    height: 500px;
-    
+.AcademyInfoImg {
+  background-image: url(img/Garduation.jpeg);
+  background-size: cover;
+  border-radius: 15px;
+  height: 500px;
 }
-.BannerAcademyinfo
-{
-
-    background-image: url(img/large-modern-office-building.jpg);
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0,0, 0.7);
+.BannerAcademyinfo {
+  background-image: url(img/large-modern-office-building.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.BannerAcademyHead
-{
-    font-size: 37px;
-    font-weight: 700;
+.BannerAcademyHead {
+  font-size: 37px;
+  font-weight: 700;
 }
-.BannerAcademyP
-{
-    font-size:27px ;
-    font-weight: 500;
+.BannerAcademyP {
+  font-size: 27px;
+  font-weight: 500;
 }
-.BannerCol
-{
-    padding: 150px;
+.BannerCol {
+  padding: 150px;
 }
-.imgGallery
-{
-    border-radius: 12px;
-    width: 50px;
-    height: 50px;
+.imgGallery {
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
 }
 
 .Loading {
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    visibility: hidden;
-    position: absolute;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+  position: absolute;
+}
 
-  }
-  
-  .loader {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    perspective: 800px;
-  }
-  
-  .crystal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    opacity: 0;
-    transform-origin: bottom center;
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+}
+
+.crystal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  transform-origin: bottom center;
+  transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);
+  animation: spin 4s linear infinite, emerge 2s ease-in-out infinite alternate,
+    fadeIn 0.3s ease-out forwards;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  from {
     transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);
-    animation: spin 4s linear infinite, emerge 2s ease-in-out infinite alternate,
-      fadeIn 0.3s ease-out forwards;
-    border-radius: 10px;
-    visibility: hidden;
   }
-  
-  @keyframes spin {
-    from {
-      transform: translate(-50%, -50%) rotateX(45deg) rotateZ(0deg);
-    }
-    to {
-      transform: translate(-50%, -50%) rotateX(45deg) rotateZ(360deg);
-    }
+  to {
+    transform: translate(-50%, -50%) rotateX(45deg) rotateZ(360deg);
   }
-  
-  @keyframes emerge {
-    0%,
-    100% {
-      transform: translate(-50%, -50%) scale(0.5);
-      opacity: 0;
-    }
-    50% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeIn {
-    to {
-      visibility: visible;
-      opacity: 0.8;
-    }
-  }
-  
-  .crystal:nth-child(1) {
-    background: linear-gradient(45deg, #66000a, #336699);
-    animation-delay: 0s;
-  }
-  
-  .crystal:nth-child(2) {
-    background: linear-gradient(45deg, #990017, #3366cc);
-    animation-delay: 0.3s;
-  }
-  
-  .crystal:nth-child(3) {
-    background: linear-gradient(45deg, #cc0025, #3399ff);
-    animation-delay: 0.6s;
-  }
-  
-  .crystal:nth-child(4) {
-    background: linear-gradient(45deg, #ff0033, #66ccff);
-    animation-delay: 0.9s;
-  }
-  
-  .crystal:nth-child(5) {
-    background: linear-gradient(45deg, #ff3347, #99ccff);
-    animation-delay: 1.2s;
-  }
-  
-  .crystal:nth-child(6) {
-    background: linear-gradient(45deg, #ff6666, #ccffff);
-    animation-delay: 1.5s;
-  }
+}
 
-  
+@keyframes emerge {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
 
-  .row.gallery {
-    transform: translate(-9999px, -9999px);
+@keyframes fadeIn {
+  to {
+    visibility: visible;
+    opacity: 0.8;
+  }
+}
+
+.crystal:nth-child(1) {
+  background: linear-gradient(45deg, #66000a, #336699);
+  animation-delay: 0s;
+}
+
+.crystal:nth-child(2) {
+  background: linear-gradient(45deg, #990017, #3366cc);
+  animation-delay: 0.3s;
+}
+
+.crystal:nth-child(3) {
+  background: linear-gradient(45deg, #cc0025, #3399ff);
+  animation-delay: 0.6s;
+}
+
+.crystal:nth-child(4) {
+  background: linear-gradient(45deg, #ff0033, #66ccff);
+  animation-delay: 0.9s;
+}
+
+.crystal:nth-child(5) {
+  background: linear-gradient(45deg, #ff3347, #99ccff);
+  animation-delay: 1.2s;
+}
+
+.crystal:nth-child(6) {
+  background: linear-gradient(45deg, #ff6666, #ccffff);
+  animation-delay: 1.5s;
+}
+
+.row.gallery {
+  transform: translate(-9999px, -9999px);
   opacity: 0;
   transition: opacity 0.3s;
   position: absolute;
- 
-  }
-  
-  .row.gallery.show {
-    position: relative;
-    transform: translate(0, 0);
-    
-    opacity: 1;
-  }
-
-
-.online
-{
-    background-color: hsla(137, 99%, 34%, 0.2);
-    width: 35%;
-    height: 15%;
-    border-radius: 5px;
-    font-weight: 400;
-    font-size: 16px;
-
 }
 
-.offline
-{
-    background-color: #CC1C2233;
-    width: 35%;
-    height: 15%;
-    border-radius: 5px;
-
+.row.gallery.show {
+  position: relative;
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
-.cardCourseTitle
-{
-    font-weight: 700;
-    font-size: 16px;
+.online {
+  background-color: hsla(137, 99%, 34%, 0.2);
+  width: 35%;
+  height: 15%;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.Location
-{
-    font-size: 14px;
+.offline {
+  background-color: #cc1c2233;
+  width: 35%;
+  height: 15%;
+  border-radius: 5px;
+}
+
+.cardCourseTitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.Location {
+  font-size: 14px;
 }
 .footer {
-    background-image: url(img/University.jpeg);
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0,0, 0.7);
-    
-
+  background-image: url(img/University.jpeg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .footer h5 {
-    color: red;
+  color: red;
 }
 
 .footer a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer .social-links a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2em;
 }
 
 .footer hr {
-    border-top: 1px solid #7f8c8d;
+  border-top: 1px solid #7f8c8d;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 
 .footer .text-center img {
-    width: 100px;
+  width: 100px;
 }
-
 
 /*Home Styling*/
 
-.Home-Banner
-{
-    background-image: url(img/HomeBanner.jpeg);
-    background-size: cover;
+.Home-Banner {
+  background-image: url(img/HomeBanner.jpeg);
+  background-size: cover;
 }
-.StartButton
-{
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    width: 150px;
-    color: white;
-    height: 40px;
-    background: -webkit-linear-gradient(180deg, #60191B, transparent) #CC1C22;
-    transition: 0.3s ease-in-out;
-    font-weight: 700;
+.StartButton {
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  width: 150px;
+  color: white;
+  height: 40px;
+  background: -webkit-linear-gradient(180deg, #60191b, transparent) #cc1c22;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
 }
-.StartButton:hover
-{
-    background: -webkit-linear-gradient(180deg, #CC1C22, transparent) #60191B
+.StartButton:hover {
+  background: -webkit-linear-gradient(180deg, #cc1c22, transparent) #60191b;
 }
 
-.WVideo{
-    outline: none;
-    border: none;
-    border-radius: 100px;
-    width: 150px;
-    color: #333;
-    height: 40px;
-    background: -webkit-linear-gradient(180deg, #d3d3d3, transparent) #eeecec;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
+.WVideo {
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  width: 150px;
+  color: #333;
+  height: 40px;
+  background: -webkit-linear-gradient(180deg, #d3d3d3, transparent) #eeecec;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
 }
-.WVideo:hover
-{
-    background: -webkit-linear-gradient(180deg, #eeecec, transparent) #d3d3d3
+.WVideo:hover {
+  background: -webkit-linear-gradient(180deg, #eeecec, transparent) #d3d3d3;
 }
-.USersBtn
-{
-    outline: none;
-    border: none;
-    background-color: #FFFFFF57;
-    width: 235px;
-    height: 150px;
-    font-weight: 600;
-    font-size: 35px;
-    color: #660004;
-    margin-top: 20px;
+.USersBtn {
+  outline: none;
+  border: none;
+  background-color: #ffffff57;
+  width: 235px;
+  height: 150px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #660004;
+  margin-top: 20px;
 }
-.USersTitle
-{
-    font-size: 20px;
-    font-weight: 500;
-    
+.USersTitle {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ffa4a4;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 66px;
-    width: 380px;
-    margin-bottom: 15px;
-    float: right;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffa4a4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 66px;
+  width: 100%;
+  margin-bottom: 15px;
+  float: right;
 }
 
 .search-button {
-    background-color: #ffecec;
-    border-radius: 8px;
-    border: none;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 12px;
+  background-color: #ffecec;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
 }
 
 .search-button svg {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .search-input {
-    border: none;
-    padding: 10px;
-    flex: 1;
-    font-size: 16px;
-    outline: none;
+  border: none;
+  padding: 10px;
+  flex: 1;
+  font-size: 16px;
+  outline: none;
 }
 
 .search-input::placeholder {
-    color: #9e9e9e;
+  color: #9e9e9e;
 }
 
-.carouselContiner
-{
-    background-color: #FFEAEB;
-    border-radius:10px ;
-    padding: 24px 32px 24px 32px;
+.carouselContiner {
+  background-color: #ffeaeb;
+  border-radius: 10px;
+  padding: 24px 32px 24px 32px;
 }
 
 .category-Btn {
-    border: 1px solid #CC1C22;
+  border: 1px solid #cc1c22;
+  border-radius: 10px;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #000;
+  width: 165px;
+  height: 65px;
+  transition: 0.3s;
+}
+
+.category-Btn.active,
+.category-Btn:hover {
+  color: #ff5a5a;
+  background-color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ffecec53;
+  border-radius: 50%;
+  color: #333;
+}
+.CarousalControl::after {
+  color: #333;
+}
+
+.content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  opacity: 0; /* Initially set opacity to 0 (transparent) */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transition for opacity and visibility changes */
+  visibility: hidden; /* Make it hidden but still takes space */ /* Still needed for initial hiding */
+  position: absolute;
+}
+
+/*Courses page Styling*/
+
+.SubHeader {
+  background-image: url(img/Subheader.jpeg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content-section {
+  transform: translate(-9999px, -9999px);
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+}
+.content-section.active {
+  position: relative;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.navPag.active .page-item {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+.navpagUl .page-item {
+  margin: 5px;
+  background-color: #f1f1f1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  align-items: center;
+  padding: 6px;
+  transition: 0.3s;
+}
+
+.navpagUl .page-item:hover,
+.navpagUl .page-item.active {
+  background-color: red;
+  color: white;
+}
+
+.navPag {
+  color: black;
+  transition: 0.3s;
+}
+
+.navpagUl .page-item .navPag:hover,
+.navpagUl .page-item .navPag.active {
+  color: white;
+}
+/* mobile size layout*/
+@media screen and (max-width: 600px) {
+  .BannerAcademyImg {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+
+  .WVideo {
+    margin-top: 20px;
+  }
+
+  .homeBannerGirl {
+    display: none;
+  }
+  .category-Btn {
+    border: 1px solid #cc1c22;
     border-radius: 10px;
     margin: 0 5px;
     background-color: #fff;
     color: #000;
-    width: 165px;
-    height: 65px;
+    width: 130px;
+    height: 40px;
     transition: 0.3s;
-}
-
-.category-Btn.active, .category-Btn:hover {
-    color: #ff5a5a;
-    background-color: #fff;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon 
-{
-    background-color: #ffecec53;
-    border-radius: 50%;
-    color: #333;
-}
-.CarousalControl::after
-{
-    color: #333;
-}
-
-.content
-{
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-top: 20px;
-    opacity: 0; /* Initially set opacity to 0 (transparent) */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transition for opacity and visibility changes */
-    visibility: hidden; /* Make it hidden but still takes space */ /* Still needed for initial hiding */
-    position: absolute;
-}
-
-/* mobile size layout*/
-@media screen and (max-width: 600px) 
-  {
-    .BannerAcademyImg {
-      visibility: hidden;
-      clear: both;
-      float: left;
-      margin: 10px auto 5px 20px;
-      width: 28%;
-      display: none;
-    }
-
-    
-
-    .WVideo
-    {
-        margin-top: 20px;
-    }
-
-    .homeBannerGirl
-    {
-        display: none;
-    }
-    .category-Btn {
-        border: 1px solid #CC1C22;
-        border-radius: 10px;
-        margin: 0 5px;
-        background-color: #fff;
-        color: #000;
-        width: 130px;
-        height: 40px;
-        transition: 0.3s;
-    }
   }
-
-
- 
+}
