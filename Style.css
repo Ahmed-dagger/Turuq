@@ -489,6 +489,14 @@ body {
   width: 100px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1000;
+}
+
 /*Home Styling*/
 
 .Home-Banner {
