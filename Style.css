@@ -263,7 +263,7 @@ body
     cursor: pointer;
     position: relative;
     padding: 10px 12px;
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(193, 3, 3);
     border: 2px solid rgb(193, 3, 3);;
     border-radius: 34px;
@@ -278,6 +278,7 @@ body
     position: absolute;
     inset: 0;
     margin: auto;
+    min-width: 40px;
     width: 50px;
     height: 50px;
     border-radius: inherit;
@@ -448,19 +449,24 @@ body
     animation-delay: 1.5s;
   }
 
+  
+
   .row.gallery {
-  transform: translateY(50px);
+    transform: translate(-9999px, -9999px);
   opacity: 0;
-  transition: all 0.3s ;
-  margin-bottom: 20px;
+  transition: opacity 0.3s;
   position: absolute;
+ 
   }
   
   .row.gallery.show {
     position: relative;
-    transform: translateY(0);
+    transform: translate(0, 0);
+    
     opacity: 1;
   }
+
+
 .online
 {
     background-color: hsla(137, 99%, 34%, 0.2);
@@ -689,10 +695,7 @@ body
       display: none;
     }
 
-    .main-header .cart
-    {
-    padding-left: 220px;
-    }
+    
 
     .WVideo
     {

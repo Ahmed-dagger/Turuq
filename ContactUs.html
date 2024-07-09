@@ -46,19 +46,16 @@
         <!-- Main Header -->
         <div class="main-header py-3 bg-white">
             <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                   <a href="Home.html"><img src="img/Logo.png" alt=""></a>
+                </div>
                 
+                <nav class="navbar navbar-expand-lg justify-content-center text-center navbar-light p-0">
 
-                
-                <nav class="navbar navbar-expand-lg justify-content-between navbar-light p-0">
-
-                    <div class="logo ">
-                        <a href="index.htm"><img src="img/Logo.png" alt=""></a>
-                     </div>
-
-                    <div class="collapse navbar-collapse text-right" id="navbarNav">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav text-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="Home.html">Home  
+                                <a class="nav-link" href="Home.html">Home
 
                                      <span class="sr-only">(current)</span> </i></a>
                             </li>
@@ -71,7 +68,9 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="otherDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Other
-                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                    </svg>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="otherDropdown">
                                     <li><a class="dropdown-item" href="#">Submenu 1</a></li>
@@ -94,53 +93,43 @@
                     </div>
                 </nav>
 
-                <div class="container d-flex">
-                    <div class="col-sm d-flex justify-content-end">
-                        <div class="d-flex px-2 justify-content-end text-right">
+                <div class="d-flex justify-content-end text-right">
 
-                            <div class="cart">
-                                <a href="#"><i class="fa fa-shopping-cart"></i><span class="badge rounded-pill badge-danger">3</span></a>
-                            </div>
-                            <!--MObile Menu-->
-                                
-                        </div>
-
-                        <div class="d-lg-none Burger">
-                            <nav id="sidebar" class="sidebar">
-                                <div class="sidebar-header">
-                                    <img class="SideBarLogo" src="img/white-logo.png" alt="">
-                                    <button type="button" class="close" aria-label="Close" id="sidebarCollapse">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <ul class="list-unstyled components">
-                                    <li class="MenuItem"><a href="#" class="linkItem">Home</a></li>
-                                    <li class="MenuItem"><a href="Courses.html" class="linkItem">Courses</a></li>
-                                    <li class="MenuItem"><a href="#otherSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle linkItem">Other</a>
-                                        <ul class="collapse list-unstyled" id="otherSubmenu">
-                                            <li><a href="#" class="linkItem">Submenu 1</a></li>
-                                            <li><a href="#" class="linkItem">Submenu 2</a></li>
-                                            <li><a href="#" class="linkItem">Submenu 3</a></li>
-                                        </ul></li>
-                                    <li class="MenuItem"><a href="#" class="linkItem">About</a></li>
-                                    <li class="MenuItem"><a href="#" class="linkItem">Contact</a></li>
-                                </ul>
-                            </nav>
-    
-                            <button type="button" id="sidebarCollapseBtn">
-                                <i class="fas fa-align-left"></i>
-                            </button>
-    
-                        </div>
-        
-
+                    <div class="cart">
+                        <a href="#"><i class="fa fa-shopping-cart"></i><span class="badge rounded-pill badge-danger">3</span></a>
                     </div>
-
+                    <!--MObile Menu-->
+                        
                 </div>
 
-                
                     <!--MObile Menu-->
-                    
+                    <div class="d-lg-none Burger">
+                        <nav id="sidebar" class="sidebar">
+                            <div class="sidebar-header">
+                                <img class="SideBarLogo" src="img/white-logo.png" alt="">
+                                <button type="button" class="close" aria-label="Close" id="sidebarCollapse">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <ul class="list-unstyled components">
+                                <li class="MenuItem"><a href="#" class="linkItem">Home</a></li>
+                                <li class="MenuItem"><a href="Courses.html" class="linkItem">Courses</a></li>
+                                <li class="MenuItem"><a href="#otherSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle linkItem">Other</a>
+                                    <ul class="collapse list-unstyled" id="otherSubmenu">
+                                        <li><a href="#" class="linkItem">Submenu 1</a></li>
+                                        <li><a href="#" class="linkItem">Submenu 2</a></li>
+                                        <li><a href="#" class="linkItem">Submenu 3</a></li>
+                                    </ul></li>
+                                <li class="MenuItem"><a href="#" class="linkItem">About</a></li>
+                                <li class="MenuItem"><a href="#" class="linkItem">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <button type="button" id="sidebarCollapseBtn">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+
+                    </div>
 
                 
             </div>
