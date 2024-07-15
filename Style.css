@@ -793,6 +793,97 @@ body {
   color: #aaa;
 }
 
+/*? About Page styling*/
+.SubHeaderAbout {
+  background-image: url(img/Container.png);
+}
+.SubHeaderAboutImg {
+  width: 100%;
+}
+.InfoCounterAbout {
+  background-color: #cc1c2226;
+  background-image: url(img/Container.png);
+  background-size: cover;
+  background-position: 30px;
+}
+
+.InfoCounterAbouticon {
+  max-width: 70px;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 15px;
+}
+.carousel-grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.sectionOfvideotrailer {
+  background-image: url(img/backgroundSectionabout.jpeg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.VideoButton {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 30px;
+  color: white;
+  transition: 0.3s;
+}
+
+.VideoButton:hover {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+}
+
+.MembersImg {
+  max-width: 250px;
+  max-height: 250px;
+}
+.TitleOfIcon {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.ContantFieldStyling {
+  background-color: #eeeeee;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  height: 60px;
+  padding-left: 30px;
+}
+.MessageFieldStyling {
+  background-color: #eeeeee;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  height: 220px;
+  padding-left: 30px;
+}
+.ContactSubmit {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  background: -webkit-linear-gradient(180deg, #60191b, transparent) #cc1c22;
+  transition: 0.3s ease-in-out;
+}
+.ContactSubmit:hover {
+  background: -webkit-linear-gradient(180deg, #cc1c22, transparent) #60191b;
+}
 /*? mobile size layout*/
 @media screen and (max-width: 600px) {
   .BannerAcademyImg {
@@ -820,5 +911,9 @@ body {
     width: 130px;
     height: 40px;
     transition: 0.3s;
+  }
+
+  .carouselAbout {
+    display: none;
   }
 }
