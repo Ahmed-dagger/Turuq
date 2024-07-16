@@ -102,6 +102,29 @@ body {
   font-size: 10px;
 }
 
+.cart-view {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 300px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cart-view.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-view .cart-content {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
 .sidebar {
   position: fixed;
   top: 0;

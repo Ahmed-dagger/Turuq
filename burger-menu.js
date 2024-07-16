@@ -1,3 +1,30 @@
+const cartBtn = document.getElementById("cart-btn");
+const closeCartBtn = document.getElementById("close-cart-btn");
+const viewMoreBtn = document.getElementById("view-more-btn");
+const cartView = document.getElementById("cart-view");
+const detailedCartPage = document.getElementById("detailed-cart-page");
+
+cartBtn.addEventListener("click", function () {
+  cartView.classList.add("show");
+});
+
+closeCartBtn.addEventListener("click", function () {
+  cartView.classList.remove("show");
+});
+
+viewMoreBtn.addEventListener("click", function () {
+  cartView.classList.remove("show");
+  detailedCartPage.classList.remove("d-none");
+  detailedCartPage.scrollIntoView({ behavior: "smooth" });
+});
+
+// Close cart view when clicking outside of it
+document.addEventListener("click", function (event) {
+  if (!cartView.contains(event.target) && !cartBtn.contains(event.target)) {
+    cartView.classList.remove("show");
+  }
+});
+
 $(document).ready(function () {
   $("#sidebarCollapseBtn").on("click", function () {
     $("#sidebar").toggleClass("active");

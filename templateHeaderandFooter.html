@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="LoginRegister/LoginRegisterStyling.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,7 +96,55 @@
                 <div class="d-flex ml-auto">
 
                     <div class="cart text-right d-flex justify-content-end">
-                        <a href="#"><i class="fa fa-shopping-cart"></i><span class="badge rounded-pill badge-danger">3</span></a>
+                        <a href="#"><i class="fa fa-shopping-cart" id="cart-btn"></i><span class="badge rounded-pill badge-danger">3</span></a>
+                    </div>
+
+                    <div class="cart-view p-3 mr-5" id="cart-view">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5>Shopping Cart</h5>
+                            <button class="close pb-2" id="close-cart-btn"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="cart-content container mt-3">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="img/course.jpg" alt="">
+
+                                </div>
+                                <div class="col-md-7 align-items-center">
+                                    <h6>Angular course 2020 mid guide</h6>
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="img/course.jpg" alt="">
+
+                                </div>
+                                <div class="col-md-7 align-items-center">
+                                    <h6>Angular course 2020 mid guide</h6>
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="img/course.jpg" alt="">
+
+                                </div>
+                                <div class="col-md-7 align-items-center">
+                                    <h6>Angular course 2020 mid guide</h6>
+
+                                </div>
+
+                            </div>
+                            <!-- Add more items here -->
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button class="LogINBtn" id="view-more-btn">Show Cart</button>
+                        </div>
                     </div>
                     <!--MObile Menu-->
                         
